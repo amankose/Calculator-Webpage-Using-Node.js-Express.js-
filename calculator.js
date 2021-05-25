@@ -20,6 +20,6 @@ app.post("/", function(req, res){
   res.send("The Addition is: " + add  + ".  " +  "The Substraction is: " + sub + ".  " + "The Multiplication is: " + mul + ".  " + "The Division is: " + div );
 });
 
-app.listen(3200, function(){
+app.listen(process.env.PORT, function(){
   console.log("Server started on port 3200.");
 });
